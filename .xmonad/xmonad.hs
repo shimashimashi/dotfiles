@@ -26,9 +26,15 @@ myLayout =   (spacing 4 $ ResizableTall 1 (3/100) (1/2) [])
              (dragPane Horizontal (1/10) (1/2)) ||| (dragPane Vertical   (1/10) (1/2))
          )
 
-main = xmonad =<< xmobar myConfig
+myLogHook dest = dynamicLogWithPP defaultPP { 
+    ppOutput = hPutStrLn dest
+    , ppVisible = wrap "(" ")"
+}   
 
-myConfig = defaultConfig {
-    modMask = myModMask
-    , layoutHook = toggleLayouts (noBorders Full) $ avoidStruts $ myLayout
-}
+main = do
+    xmproc <- spawnPipe "xmobar /home/knagashi/.xmobarrc"
+    xmonad $ defaultConfig {
+        modMask = myModMask
+        , layoutHook = toggleLayouts (noBorders Full) $ avoidStruts $ myLayout
+        , logHook = myLogHook xmproc
+    }
