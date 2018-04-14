@@ -53,7 +53,9 @@ define_keymap(lambda wm_class: wm_class not in ("Emacs", "URxvt", "Gnome-termina
     K("C-j"): K("enter"),
     K("C-o"): [K("enter"), K("left")],
     # Copy
-    K("C-w"): [K("C-x"), set_mark(False)],
+
+    # comment out for tab-close in chrome
+    # K("C-w"): [K("C-x"), set_mark(False)],
     K("M-w"): [K("C-c"), set_mark(False)],
 
     # comment out for PageUp in Vimium
