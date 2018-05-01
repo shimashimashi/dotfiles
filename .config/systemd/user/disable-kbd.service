@@ -1,0 +1,13 @@
+# 1. systemctl --user enable disable-kbd
+
+[Unit]
+Description=disable default keyboard
+After=network.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/bin/input-kbd -f /home/knagashi/.disable-kbd/disable-all.map 4
+
+[Install]
+WantedBy=multi-user.target
