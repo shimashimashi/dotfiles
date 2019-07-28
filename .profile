@@ -20,7 +20,7 @@ fi
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 # brightness
-xrandr --output "eDP-1-1" --brightness 0.5
+xrandr --output "eDP-1" --brightness 0.85
 
 # natural scrolling
 synclient VertScrollDelta=-111
