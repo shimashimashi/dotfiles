@@ -56,6 +56,8 @@ nnoremap ; :
 nnoremap : ;
 nnoremap tn :tabnext<Space>
 set imdisable
+" set binary noeol
+" set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 " ヤンクなどで * レジスタにも書き込む
 set clipboard=unnamed
