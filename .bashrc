@@ -121,19 +121,9 @@ fi
 
 stty intr ^q
 
-export PATH=/usr/local/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-export CPATH=/usr/local/cuda/include:$CPATH
-export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
-# PYTHONPATH="${PYTHONPATH}:/usr/local/lib/python2.7/dist-packages/"
-# export PYTHONPATH
-
 # alias
 # volume
 alias volup="amixer -D pulse sset Master 5%+"
 alias voldown="amixer -D pulse sset Master 5%-"
 # other
 alias g="git"
-alias ll="ls -al"
