@@ -3,12 +3,8 @@
 	email = n4ag3a2sh1i@gmail.com
 [alias]
     current-branch = ! git branch | grep -e '^\\* ' | sed -e 's/^\\* //g'
-    new-branch = "!f(){ git checkout -b $1 origin/$1;};f"
     a = add
-    b = branch
     cb = ! git current-branch
     ch = checkout
     co = commit
-    f = fetch
-    l = log
     s = status
