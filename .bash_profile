@@ -9,4 +9,4 @@ export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 
 export PROMPT_DIRTRIM=2
-export PS1='\H:\w \u \[\e[1;32m $(__git_ps1 "(%s)") \[\e[0m\] \$ '']'
+export PS1='\H:\w \u \[\e[1;32m $(__git_ps1 "(%s)") \[\e[0m\] \$ '
