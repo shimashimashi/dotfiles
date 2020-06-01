@@ -16,4 +16,4 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 
 export PROMPT_DIRTRIM=2
-export PS1='\w \u \[\e[1;32m$(__git_ps1 "(%s)")\[\e[0m\] \$ '
+export PS1='\[\e[1;32m\]\u\[\e[m\]:\[\e[1;34m\]\w \[\e[1;32m$(__git_ps1 "[%s]")\[\e[1;34m\]\$\[\e[m\] '
