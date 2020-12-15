@@ -5,3 +5,4 @@ all :
 	cp .gitconfig ~/
 	cp .vimrc ~/
 	cp -r .vim ~/
+	cp -r .docker ~/

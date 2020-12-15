@@ -1,0 +1,22 @@
+{
+    "diffEditor.ignoreTrimWhitespace": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [";"],
+            "after": [":"]
+        },
+        {
+            "before": [":"],
+            "after": [";"]
+        }
+    ],
+    // "editor.mouseWheelScrollSensitivity": 0.01,
+    "vim.useSystemClipboard": true,
+    "window.zoomLevel": 0,
+    "C_Cpp.updateChannel": "Insiders",
+    "cmake.configureOnOpen": true,
+    // "editor.tabSize": 4,
+    // "[javascript]": {
+    //     "editor.tabSize": 2
+    // }
+}
